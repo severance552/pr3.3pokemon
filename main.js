@@ -144,7 +144,6 @@ function createClickCounter(limit, btn) {
 const kick1Counter = createClickCounter(6, btnKick1);
 const kick2Counter = createClickCounter(6, btnKick2);
 
-// Вішаємо обробники дій через замикання
 btnKick1.addEventListener('click', function () {
     kick1Counter(() => {
         performAttack(random(20, 10), random(20, 10));
